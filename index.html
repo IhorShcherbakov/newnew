@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anastasia Nails - професійний салон нігтьової естетики, який пропонує широкий спектр послуг, продуктів та курсів для догляду за руками і нігтями.">
+  <meta name="keywords" content="Anastasia Nails, салон нігтьової естетики, манікюр, педікюр, нігті, курси, продукти, догляд">
+  <title>Anastasia Nails</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Нові стилі для гамбургер меню */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: #333;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav ul {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+
+      nav ul li {
+        padding: 12px 16px;
+        border-top: 1px solid #ddd;
+      }
+
+      .hamburger:hover + nav ul {
+        display: flex;
+      }
+    }
+
+    /* Змінені стилі для тексту на головному екрані */
+    h1 {
+      color: #000;
+    }
+
+    .hero-text {
+      color: #000;
+    }
+
+    /* Змінені стилі для кнопки "Wiecej informacji" */
+    .animated-button {
+      background-color: #ddd;
+      color: #000;
+      border: 1px solid #000;
+      padding: 8px 16px;
+      animation: pulse 1.5s infinite;
+    }
+
+    /* Нові стилі для блоків з тіньовими полосками */
+    section {
+      padding: 60px 0;
+    }
+
+    section h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 30px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0
+  }
+
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .service img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service p.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Додано стилі для розділювальних полосок між блоками */
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+  }
+
+  /* Нові стилі для блоку з картою */
+  #map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Змінені стилі для тексту в секції "О нас" */
+#about p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#about a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Нові стилі для контактної інформації */
+#contact p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#contact a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Нові стилі для футера */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a class="nav-link" href="#home">Strona główna</a></li>
+        <li><a class="nav-link" href="#services">Kursy online</a></li>
+        <li><a class="nav-link" href="#about">O mnie</a></li>
+        <li><a class="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1>Anastasia Nails</h1>
+      <p class="hero-text">Jesteśmy profesjonalnym salonem estetyki paznokci oferującym szeroką gamę usług, produktów i kursów związanych z pielęgnacją dłoni i paznokci. Nasza oferta obejmuje manicure, pedicure, zabiegi na paznokcie, kursy dla stylistów paznokci i wiele innych.</p>
+      <a href="#about" class="animated-button">Wiecej informacji</a>
+    </section>
+    <section id="services">
+      <h2>Katalog usług</h2>
+      <div class="service-container">
+        <div class="service">
+          <h3>Kurs permanent online</h3>
+           <img src="https://www.instagram.com/p/Cj6Sc67jREm/" alt="Kurs permanent online" />
+      <p class="price">399 zł</p>
+      <a href="#" class="animated-button">Wiecej informacji</a>
+    </div>
+    <div class="service">
+      <h3>Kurs manicure online</h3>
+      <img src="https://www.instagram.com/p/CleWumeDvFg/" alt="Kurs manicure online" />
+      <p class="price">399 zł</p>
+      <a href="#" class="animated-button">Wiecej informacji</a>
+    </div>
+    <div class="service">
+      <h3>Skrypt szkoleniowy manicure</h3>
+      <img src="ihttps://www.instagram.com/p/ClbZSaNDMlA/" alt="Skrypt szkoleniowy manicure" />
+      <p class="price">299 zł</p>
+      <a href="#" class="animated-button">Wiecej informacji</a>
+    </div>
+    <div class="service">
+      <h3>Skrypt szkoleniowy permanent</h3>
+      <img src="https://www.instagram.com/p/CohR2OAjj9y/" alt="Skrypt szkoleniowy permanent" />
+      <p class="price">299 zł</p>
+      <a href="#" class="animated-button">Wiecej informacji</a>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <h2>O nas</h2>
+  <p>Anastasia Nails to profesjonalne centrum szkoleniowe, które oferuje najwyższej jakości kursy online w dziedzinie manicure i permanent makeup. Naszą misją jest dostarczanie aktualnych, praktycznych i przystępnych szkoleń, które pomagają naszym uczniom zdobyć niezbędną wiedzę i umiejętności, aby odnieść sukces w branży beauty.</p>
+  <p>Założona przez doświadczoną stylistkę paznokci i specjalistkę w dziedzinie permanent makeup, Anastasię, nasza firma współpracuje z ekspertami z różnych dziedzin, aby dostarczyć kursantom najnowszych informacji i technik. Jesteśmy dumni z naszego indywidualnego podejścia do każdego ucznia, a nasze kursy są dostosowane do różnych poziomów umiejętności - zarówno dla początkujących, jak i zaawansowanych stylistów.</p>
+  <p>Wierzymy, że sukces w branży beauty zależy od ciągłego doskonalenia umiejętności i poszerzania wiedzy. Dlatego nasze kursy są stale aktualizowane, aby uwzględnić najnowsze trendy i odkrycia w dziedzinie manicure i permanent makeup. Oferujemy również wsparcie po zakończeniu kursu, aby naszym absolwentom pomóc w ich dalszym rozwoju zawodowym.</p>
+  <p>Zapraszamy do dołączenia do naszej społeczności i odkrycia, jak nasze kursy online mogą pomóc Ci w realizacji Twoich marzeń o karierze w branży beauty.</p>
+  <!-- Додано блок з картою Google -->
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!
+</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; Anastasia Nails 2023</p>
+</footer>
+<script>
+  // Додано JS код для відкривання гамбургер меню
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav ul');
+  const navLinks = document.querySelectorAll('nav ul li a');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+    });
+  });
+</script>
+  </body>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; Anastasia Nails 2023</p>
+</footer>
+<script>
+  // Додано JS код для відкривання гамбургер меню
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav ul');
+  const navLinks = document.querySelectorAll('nav ul li a');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+    });
+  });
+</script>
+<script>
+  // Додаємо код для вбудовування зображень з Instagram
+  const instagramLinks = [
+    'https://www.instagram.com/p/Cj6Sc67jREm/',
+    'https://www.instagram.com/p/CleWumeDvFg/',
+    'https://www.instagram.com/p/ClbZSaNDMlA/',
+    'https://www.instagram.com/p/CohR2OAjj9y/'
+  ];
+
+  const serviceImages = document.querySelectorAll('.service img');
+
+  serviceImages.forEach((image, index) => {
+    const url = `https://api.instagram.com/oembed?url=${instagramLinks[index]}&maxwidth=400`;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        image.src = data.thumbnail_url;
+      })
+      .catch(error => {
+        console.error('Error fetching Instagram image:', error);
+      });
+  });
+</script>
+  </body>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+  <script>
+    // Додаємо код для вбудовування зображень з Instagram
+    const instagramLinks = [
+      'https://www.instagram.com/p/Cj6Sc67jREm/',
+      'https://www.instagram.com/p/CleWumeDvFg/',
+      'https://www.instagram.com/p/ClbZSaNDMlA/',
+      'https://www.instagram.com/p/CohR2OAjj9y/'
+    ];
+
+    const serviceImages = document.querySelectorAll('.service img');
+
+    serviceImages.forEach((image, index) => {
+      const url = `https://api.instagram.com/oembed?url=${instagramLinks[index]}&maxwidth=400`;
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          image.src = data.thumbnail_url;
+        })
+        .catch(error => {
+          console.error('Error fetching Instagram image:', error);
+        });
+    });
+  </script>
+</body>
+</html>
